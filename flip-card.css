@@ -50,6 +50,12 @@
     box-shadow: 0 .4rem 1.2rem .2rem rgba(0, 0, 0, .05);
 }
 
+.flip-card-front * ,
+.flip-card-back * {
+    display: block;
+    width: 100%;
+}
+
 .flip-card-front:before,
 .flip-card-back:before {
     content: "";
