@@ -1,0 +1,28 @@
+.num-list {
+    list-style: none !important;
+    counter-reset: my-list-counter;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.num-list li {
+    position: relative;
+    margin-bottom: 20px !important;
+    padding-left: 40px;
+}
+
+.num-list li:before {
+    content: counter(my-list-counter);
+    counter-increment: my-list-counter;
+    position: absolute;
+    left: 0;
+    top: -4px;
+    color: #fff;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    background: var(--base-color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
